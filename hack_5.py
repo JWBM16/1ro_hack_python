@@ -2,7 +2,19 @@
 text: "fooziman" output => "f00z1m@n"
 """
 
+
 def fn_hack_5():
     result = "fooziman"
-    #...
-    return result  
+
+    result = result.replace(
+        "o",
+        "0",
+    )
+    result = result.replace("i", "1")
+    result = result.replace("a", "@")
+
+    return result
+
+
+r = fn_hack_5()
+print(r)
